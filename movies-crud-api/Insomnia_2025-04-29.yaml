@@ -1,0 +1,153 @@
+type: collection.insomnia.rest/5.0
+name: go-movies-api
+meta:
+  id: wrk_4e9391e5962b4346a7f2a96bb5f05b81
+  created: 1745945683565
+  modified: 1745945683565
+collection:
+  - url: http://localhost:8000/movies
+    name: Get all the movies
+    meta:
+      id: req_a62cb7ea2dc04da29e2069de9dd04291
+      created: 1745945697504
+      modified: 1745945915298
+      isPrivate: false
+      sortKey: -1745945697504
+    method: GET
+    parameters:
+      - id: pair_0007198b12064f3597c42cfdd413d81f
+        name: id
+        value: "1"
+        disabled: true
+      - id: pair_0cf055c7bcb7498a84280c831945aef4
+        disabled: true
+    headers:
+      - name: User-Agent
+        value: insomnia/11.0.2
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8000/movies
+    name: Add new movie
+    meta:
+      id: req_f91a9be299da451681b89de7892d3c55
+      created: 1745945835851
+      modified: 1745945963718
+      isPrivate: false
+      sortKey: -1745945835851
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        	{
+        		"isbn": "12123333",
+        		"title": "rth",
+        		"director": {
+        			"firstname": "h",
+        			"lastname": "der"
+        		}
+        	}
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.0.2
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8000/movies/7149345
+    name: Update movie
+    meta:
+      id: req_68692519932d4510a5018639d08e44c1
+      created: 1745945930511
+      modified: 1745946121669
+      isPrivate: false
+      sortKey: -1745945930511
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        		"isbn": "121212",
+        		"title": "Darth Warderdddd",
+        		"director": {
+        			"firstname": "darthddd",
+        			"lastname": "warderddd"
+        		}
+        	}
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.0.2
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8000/movies/7149345
+    name: New Request
+    meta:
+      id: req_88a3f65f582e4edb9b8ab7f99b5e9791
+      created: 1745946128679
+      modified: 1745946148038
+      isPrivate: false
+      sortKey: -1745946128679
+    method: DELETE
+    headers:
+      - name: User-Agent
+        value: insomnia/11.0.2
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8000/movies/9377656
+    name: New Request
+    meta:
+      id: req_4b62ae4be4b74e76901dfb6eb6c9da43
+      created: 1745946130901
+      modified: 1745946757689
+      isPrivate: false
+      sortKey: -1745946130901
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.0.2
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_586a79a2400b2978ba522fc212777450c1854c1f
+    created: 1745945683574
+    modified: 1745945683574
+environments:
+  name: Base Environment
+  meta:
+    id: env_586a79a2400b2978ba522fc212777450c1854c1f
+    created: 1745945683571
+    modified: 1745945683571
+    isPrivate: false
